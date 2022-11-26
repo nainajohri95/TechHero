@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin-left: 5px;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#apply date {
+  color: red;
+}
+
+.container2 {
+  
+  margin-left: 20rem;
+}
+
+.content {
+  margin-top: 55px;
+  color: yellow;
+}
+
+#reg {
+  color: red;
+}
+
+.certificate{
+    margin-top: 20px;
+    
+}
+
+.certificate h1{
+    margin-bottom: 20px;
+    margin-left: -120px;
+}
+

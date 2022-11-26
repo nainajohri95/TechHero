@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHero</title>
+ 
+    <link rel="stylesheet" href="./style2.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    
+    <style>
+      
+      .footer{
+        position:relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 90px;
+        /* background-color: rgb(159, 156, 156); */
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      .container {
+  position: relative;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.wtsapp{
+  background:rgb(24, 222, 24);
+        color: white;
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        padding: 7px;
+        border: 2px solid black;
+        
+        
+}
+.wtsapp:hover{
+  color: black;
+}
+.eml{
+  background:red;
+        color: white;
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        padding: 7px;
+        border: 2px solid black;
+}
+.eml:hover{
+  color: black;
+}
+.git{
+  background:silver;
+        color: black;
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        padding: 7px;
+        border: 2px solid black;
+}
+.git:hover{
+  color: black;
+}
+.container1 {
+          width: 90%;
+          height: 400px;
+          /* border: 10px solid rgb(245, 238, 238); */
+          position:relative;
+          margin-left: 75px;
+        }
+        .prev {
+          position: absolute;
+          top: 55%;
+          font-size: 25px;
+          font-weight: bold;
+          color: white;
+          left: 20px;
+        }
+        .next {
+          position: absolute;
+          top: 55%;
+          font-size: 25px;
+          font-weight: bold;
+          color: white;
+          right: 20px;
+        }
+        .nav-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.461);
+          transition: 0.5s;
+          z-index: 10;
+        }
+        .nav-btn:hover {
+          background-color: rgb(85, 79, 79);
+          color: black;
+        }
+  
+        .carousel-container .video {
+          width: 100%;
+          height: 400px;
+        }
+        .item {
+          position: absolute;
+          display: none;
+        }
+        .main {
+          display: block;
+        }
+        .carousel-container {
+          position: relative;
+        }
+        </style>
+    </head>
+  <body style="background-color:black ;">
+    <!-- --naviagtion bar-- -->
+    <nav class="navbar navbar-dark  " style="background-color: black;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./logo1.jpg" alt="Logo" width="150" height="140" class="d-inline-block align-text-top" style="margin-top: 10px;">
+            </a>
+          <h1 style="color: white;margin-top:10px;margin-left: -180px;"><span style="color: red;">Tech</span>Hero</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" style="margin-top: 10px;">
+            <span class="navbar-toggler-icon" style="color: white;"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" ><span style="color: red;">Tech</span>Hero</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="font-size:20px;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about1.html" style="font-size:20px;">About Us</a>
+                </li>
+                
+              <li class="nav-item">
+                <a class="nav-link" href="./ToDo.html" style="font-size:20px;">To-Do list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./books.html" style="font-size:20px;">BooksRecommended</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blogs.html" style="font-size:20px;">Blogs</a>
+              </li>
+              
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- --banner section-- -->
+      <div class="container1">
+        <div class="navigation">
+          <div class="prev nav-btn">&lt;</div>
+          <div class="next nav-btn">></div>
+  
+          <div class="carousel-container">
+            <div class="item main">
+              
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/AEdEbf7APBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+  
+            <div class="item">
+              
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/JXfBwz8qqHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+  
+            <div class="item">
+              
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/TGaXmRxGvPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- --Courses section-- -->
+      <div class="text"><h1 style="color: #fff; text-align:center;margin-top:100px;"><span style="color: red;">Our </span>Courses</h1></div>
+      <!-- --container1-- -->
+      <div class="container" style="display:inline-flex;margin-top: 150px;">
+        <div class="card" style="width:30%; border-radius: 20px; background-color:white; margin-right: 80px;margin-left:330px;margin-top: 20px;">
+            <img src="./OPERATING SYSTEM (1).jpg" class="card-img-top" alt="..." style="height: 270px; width:100% ; border-radius: 20px;" >
+            <div class="card-body" style="text-align: center;">
+              <h5 class="card-title" style="font-size: 30px; font-weight: bold; font-family:cooper;" ><span style="color: red;">Computer</span>Networks</h5>
+              <p class="card-text">A computer network is a system that connects numerous independent computers in order to share information (data) and resources.</p>
+              <a href="./cn.html" class="btn btn-primary">View Course</a>
+            </div>
+          </div>
+          <div class="card" style="width:30%; border-radius: 20px; background-color:white ; margin-right: 20px;margin-top: 20px;">
+            <img src="./OPERATING SYSTEM.jpg" class="card-img-top" alt="..." style="height: 267px; width:100% ; border-radius: 20px;" >
+            <div class="card-body" style="text-align: center;">
+              <h5 class="card-title" style="font-size: 30px; font-weight: bold; font-family:cooper;" ><span style="color: red;">Opearting</span>System</h5>
+              <p class="card-text">An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.</p>
+              <a href="./os.html" class="btn btn-primary">View Course</a>
+            </div>
+          </div>
+          
+        <!-- --container2-- -->
+        </div>
+        <div class="container" style="display:inline-flex;margin-top: 150px;">
+          <div class="card" style="width:30%; border-radius: 20px; background-color:white; margin-right: 80px;margin-left:330px;margin-top: 20px;">
+              <img src="./ml.jpg" class="card-img-top" alt="..." style="height: 270px; width:100% ; border-radius: 20px;" >
+              <div class="card-body" style="text-align: center;">
+                <h5 class="card-title" style="font-size: 30px; font-weight: bold; font-family:cooper;" ><span style="color: red;">Machine</span>Learning</h5>
+                <p class="card-text">Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior.</p>
+                <a href="./ml.html" class="btn btn-primary">View Course</a>
+              </div>
+            </div>
+            <div class="card" style="width:30%; border-radius: 20px; background-color:white ; margin-right: 20px;margin-top: 20px;">
+              <img src="./Block chain technologies.jpg" class="card-img-top" alt="..." style="height: 267px; width:100% ; border-radius: 20px;" >
+              <div class="card-body" style="text-align: center;">
+                <h5 class="card-title" style="font-size: 30px; font-weight: bold; font-family:cooper;" ><span style="color: red;">Cloud</span>Computing</h5>
+                <p class="card-text">cloud computing means storing and accessing the data and programs on remote servers that are hosted on the internet.</p>
+                <a href="./cloud.html" class="btn btn-primary">View Course</a>
+              </div>
+            </div>
+            
+      
+          </div>
+          <!-- --container3-- -->
+        <h1 style="color: #fff; text-align:center;margin-top:55px;margin-bottom: 20px;"><span style="color:red ;">Coming </span>Soon</h1>
+        <div class="container2" style="display:inline-flex;">
+            <div class="card" style="width:26%; border-radius: 20px; background-color:white; margin-right: 69px;margin-left:330px;margin-top: 20px;margin-bottom: 100px;">
+                <img src="./DSA.jpg" class="card-img-top" alt="..." style="height: 270px; width:100% ; border-radius: 20px;" >
+                <div class="card-body" style="text-align: center;">
+                  <h5 class="card-title" style="font-size: 30px; font-weight: bold; font-family:cooper;" ><span style="color: red;">DS</span>A</h5>
+                  <p class="card-text">DSA s
+                    tands for Data Structures and Algorithms.DSA is applied in problem-solving and enables developers to learn to write efficient code. It is not limited to a single programming language.</p>
+                  <a href="#" class="btn btn-primary">View Course</a>
+                </div>
+              </div>
+              <div class="card" style="width:26%; border-radius: 20px; background-color:white; margin-right: 80px;margin-left:20px;margin-top: 20px;margin-bottom:100px ;">
+                <img src="./webDev.jpg" class="card-img-top" alt="..." style="height: 270px; width:100% ; border-radius: 20px;" >
+                <div class="card-body" style="text-align: center;">
+                  <h5 class="card-title" style="font-size: 30px; font-weight: bold; font-family:cooper;" ><span style="color: red;">Web</span>Development</h5>
+                  <p class="card-text">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.</p>
+                  <a href="#" class="btn btn-primary">View Course</a>
+                </div>
+              </div>
+    
+        </div>
+        <!-- --container4-- -->
+        <h1 style="color: #fff; text-align:center;margin-top:10px;margin-bottom: 20px;"><span style="color:red ;">Boot</span>Camps</h1>
+        <div class="container2" style="display:inline-flex;">
+          <div class="card" style="width:26%; border-radius: 20px; background-color:white; margin-right: 69px;margin-left:330px;margin-top: 20px;margin-bottom: 100px;">
+              <img src="./react.jpg" class="card-img-top" alt="..." style="height: 270px; width:100% ; border-radius: 20px;" >
+              <div class="card-body" style="text-align: center;">
+                <h5 class="card-title" style="font-size: 30px; font-weight: bold; font-family:cooper;" ><span style="color: red;">React</span>Bootcamp</h5>
+                <p class="card-text">Hello Coders!React Bootcamp organised by TechHero is starting from 2nd December. Join this bootcamp to know more about react.Click on the link to view more details. </p>
+                <a href="./bootcamp.html" class="btn btn-primary">GetInfo</a>
+              </div>
+            </div>
+           
+  
+      </div>
+        <div class="container" style="display: inline-flex;">
+          <div class="image">
+              <img src="./anj.jpg" width="100%" height="100%" style="margin-left: 50px;">
+          </div>
+          <div class="content">
+              <h1 style="color: white; margin-left: 300px; margin-top: 20px;"><span style="color: red;">Our </span> Services</h1>
+              <p style="color:rgb(214, 233, 64); margin-left:180px;margin-top: 30px;">&#x2022; The main aim of our website is to provide 24*7 and 365 days a year-round access  <br>to baisc btech in computer science 
+                courses like DSA, Web development etc. <br><br>
+                &#x2022; Our website will provide some good video content containing interviews of some students placed <br>
+                at high packages in top companies like Amazon, Google etc.<br><br>
+                &#x2022; This website also have some good recommended books they can visit and purchase them at affordable price.<br><br>
+                &#x2022; Users will also get to know about some trending technologies which will keep them updated about the industrial demand
+                through our blog page.
+              </p>
+          </div>
+      </div>
+        <!-- --footer-- -->
+        
+        <div class="footer">
+          <p style="margin-top: 10px;padding-top: 15px; font-weight:bold;">&#169;2022 <span style="color: red;">TechHero.</span> All rights <span style="color:rgb(214, 233, 64) ;"> are reserved.</span></p>
+          <div class="centerdiv">
+           <a href="https://wa.me/918755055782/?text=Hi, Whatsup" style="margin-left: -5px;text-decoration:none;">&#x2022;&nbsp;Whatsapp</a>
+           <a href="https://www.linkedin.com/in/anjali-k-31917319a/" style="text-decoration: none; margin-left:20px;">&#x2022;&nbsp;Linkdln</a>
+           <a href="https://github.com/nainajohri95" style="text-decoration: none;margin-left: 20px;">&#x2022;&nbsp;GitHub</a>
+           <a href="https://www.instagram.com/techhero14/" style="text-decoration: none;margin-left: 20px;">&#x2022;&nbsp;Instagram</a>
+          </div>
+        </div>
+
+      
+     
+    
+ 
+  <script>
+    var prev = document.querySelector(".prev");
+    var next = document.querySelector(".next");
+    var images = document.querySelector(".carousel-container").children;
+    totalImages = images.length;
+
+    var index = 0;
+    prev.addEventListener("click", () => {
+      nextImage("prev");
+    });
+
+    next.addEventListener("click", () => {
+      nextImage("next");
+    });
+
+    function nextImage(direction) {
+      if (direction == "next") {
+        index++;
+        if (index == totalImages) {
+          index = 0;
+        }
+      } else {
+        if (index == 0) {
+          index = totalImages - 1;
+        } else {
+          index--;
+        }
+      }
+
+      for (let i = 0; i < totalImages; i++) {
+        images[i].classList.remove("main");
+      }
+      images[index].classList.add("main");
+    }
+
+    
+
+    window.onload = autoMove;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+          <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+   
+  </body>
+</html>
