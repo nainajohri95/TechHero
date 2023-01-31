@@ -37,7 +37,7 @@ the new technical questions to the users for their practice.
 
 
 
-# HOME PAGE
+# HOME PAGE(Created by Shubhi Agrwal)
 
 ![imageFirst](https://user-images.githubusercontent.com/81029259/203773242-530e794a-496c-4f51-965e-3e03bc5590cd.jpg)
 
@@ -52,27 +52,27 @@ These courses contains free material that we can access and download.
 ![moreCourses](https://user-images.githubusercontent.com/81029259/203776581-8cc72673-b7a6-40ff-b709-8cdca71dc89a.jpg)
 
 
-# COMING SOON COURSES
+# COMING SOON COURSES(Created by Naina Johri)
 
 The Comming Soon courses are the paid . This will contain the advance and detailed concept of Web Development and Data Structure and algorithm.
 
 
 ![omming soon](https://user-images.githubusercontent.com/81029259/203777086-74a7410f-e366-42ab-bf94-f1fee8d0de79.jpg)
 
-# TO_DO LIST
+# TO_DO LIST(Created by Anjali Kumari)
 The main purpose of making to_do list is to make user  remember  to complete the necessary task.
 
 <img width="522" alt="image" src="https://user-images.githubusercontent.com/81029259/203898022-005545fe-47ad-43b3-903b-3ec9679a7cb6.png">
 
 
-# Suggested Books
+# Suggested Books(Created by Naina Johri)
 The main purpose of this webpage is to provide the user the most suggested books . Actually if the user is a begainer and if they want to purchase the book 
 so they can directly come to this page and get highly rated books from the experts.
 
 
 ![Screenshot 2022-11-25 093056](https://user-images.githubusercontent.com/81029259/203898869-b6256b37-1db4-47d3-b912-3f0aaaf6b8f1.jpg)
 
-# Educational Blogs
+# Educational Blogs(Created by Anjali Kumari)
 
 
 The main purpose of this webpage is provide the blogs related to latest technologies.As we know that technology changes very fast as this page provide all the blogs related to the new technologies.
