@@ -41,7 +41,7 @@ the new technical questions to the users for their practice.
 
 ![imageFirst](https://user-images.githubusercontent.com/81029259/203773242-530e794a-496c-4f51-965e-3e03bc5590cd.jpg)
 
-# OUR COURSES
+# OUR COURSES(Created by Shubhi Agrwal)
 
 These courses contains free material that we can access and download.
 
